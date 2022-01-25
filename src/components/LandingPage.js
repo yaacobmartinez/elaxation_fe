@@ -1,5 +1,5 @@
-import { LockOutlined, Verified } from '@mui/icons-material';
-import { Alert, Avatar, Box, Button, Checkbox, CssBaseline, FormControlLabel, Grid, Paper, Snackbar, TextField, Typography, } from '@mui/material';
+import { Verified } from '@mui/icons-material';
+import { Alert, Box, Button, CssBaseline, Grid, Paper, Snackbar, TextField, Typography, } from '@mui/material';
 import { useFormik } from 'formik';
 import React, { Fragment, useState } from 'react';
 import { useJwt } from 'react-jwt';
@@ -229,7 +229,6 @@ const ChangePassword = () => {
     )
 }
 const ForgotComponent = () => {
-    const {push} = useHistory()
     const [success, setSuccess] = useState(null)
     const {values, errors, handleChange, handleSubmit, isSubmitting} = useFormik({
         initialValues:{

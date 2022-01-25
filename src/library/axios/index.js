@@ -3,7 +3,8 @@ import { cloneDeep } from "lodash";
 import {fetchFromStorage} from "../utils/Storage"
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:5001',
+    baseURL: 'https://w3ypmdrcw3.execute-api.ap-southeast-1.amazonaws.com',
+    //baseURL: 'http://localhost:5001',
     headers: {
       "Content-Type": "application/json",
     },
